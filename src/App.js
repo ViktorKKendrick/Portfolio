@@ -1,25 +1,37 @@
-import logo from './logo.svg';
 import './App.css';
-
+import SplashPage from './pages/SplashPage';
+import Header from './pages/Header';
+import MyNav from './pages/MyNav';
+import MyFooter from './Components/Footer';
+import Projects from './pages/Projects';
+import Social from './pages/Social';
+import 'bootstrap/dist/css/bootstrap.css';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route
+} from "react-router-dom";
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className='Container container-fluid bg-light'>
+            <Router>
+                <Header />
+                <MyNav />
+                <Switch>
+                    <Route exact path='/Projects'>
+                        <Projects />
+                    </Route>
+                    <Route exact path='/Social'>
+                        <Social />
+                    </Route>
+                    <Route path={["/", '*']}>
+                        <SplashPage />
+                    </Route>
+                </Switch>
+                <MyFooter />
+            </Router>
+        </div>
+    );
 }
 
 export default App;
