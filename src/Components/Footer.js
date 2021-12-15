@@ -7,12 +7,9 @@ export default function MyFooter() {
             <footer className="footer">
                 <Row>
                     <Col className='col-sm-1 md-auto d-flex align-items-center justify-content-center'>
-                    
                     </Col>
                     <Col className='col-sm-1 md-auto d-flex align-items-center justify-content-center'>
-                        
                         <a className='nav-link' href='https://www.codewars.com/users/ViktorKKendrick'>
-                            
                             <img src="./Img/CW.png" alt="CodeWars" height="30px"/>
                         </a>
                     </Col>

@@ -1,20 +1,22 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
 import WhiteSpace from '../Components/WhiteSpace';
+
 import 'bootstrap/dist/css/bootstrap.css';
 export default function SplashPage() {
     return (
+        <>
             <Container className='container-fluid bg-light'>
                 <Row>
                     <WhiteSpace />
-                    <h3 class="text-center">About Me!</h3>
+                    <h3 className="text-center">About Me!</h3>
                     <Col className='col-lg-5 text-center mb-5 mb-lg-0'>
                         <h1>Education</h1>
                         <p>Graduated from Boyle County High School. Taking many provided courses, such as AP Computer Science, AP Chemistry, and AP Physics. Also took additional courses: Java, Python, and Project Based Programming</p>
                         <p>Took a course at Awesome Inc U in 2016 Learning C-Sharp, and the FullStack Developer Bootcamp in 2021</p>
                     </Col>
                     <Col className='col-lg-2 text-center mb-5 mb-lg-0'>
-                        <WhiteSpace/>
+                        <WhiteSpace />
                     </Col>
                     <Col className='col-lg-5 text-center mb-5 mb-lg-0'>
                         <h1>Work Experience</h1>
@@ -23,6 +25,6 @@ export default function SplashPage() {
                     </Col>
                 </Row>
             </Container>
-
+        </>
     )
 }

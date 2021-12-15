@@ -1,56 +1,48 @@
 import React from 'react'
-import { Container, Row, Col, Card, Button } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
+import ProjectItem from '../Components/ProjectItem.js';
+import '../App.css';
 export default function Projects() {
     return (
-        <Container className='text-center'>
-            <h1>Projects</h1>
-            <Row className='d-flex text-center align-items-center justify-content-center'>
-                <Col className='col-lg-3 text-center mb-5 mb-lg-0'>
-                    <Card style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src="./Img/TicTacToe.png" />
-                        <Card.Body>
-                            <Card.Title>TicTacToe Project</Card.Title>
-                            <Card.Text>
-                                Some quick example text to build on the card title and make up the bulk of
-                                the card's content.
-                            </Card.Text>
-                            <Button variant="primary" href='https://viktorkkendrick.github.io/TicTacToe/'>Live Project Site</Button>
-                            <Button variant="muted" href='https://github.com/ViktorKKendrick/TicTacToe'>Github Repository</Button>
-                        </Card.Body>
-                    </Card>
-                </Col>
-                <Col className='col-lg-1' />
-                <Col className='col-lg-3 text-center mb-5 mb-lg-0'>
-                    <Card style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src="./Img/WeatherApp.png" />
-                        <Card.Body>
-                            <Card.Title>Weather App Project</Card.Title>
-                            <Card.Text>
-                                Some quick example text to build on the card title and make up the bulk of
-                                the card's content.
-                            </Card.Text>
-                            <Button variant="primary" href='https://viktorkkendrick.github.io/WeatherApp/'>Live Project Site</Button>
-                            <Button variant="muted" href='https://github.com/ViktorKKendrick/WeatherApp'>Github Repository</Button>
-                        </Card.Body>
-                    </Card>
-                </Col>
-                <Col className='col-lg-1' />
-                <Col className='col-lg-3 text-center mb-5 mb-lg-0'>
-                    <Card style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src="./Img/MindReader.png" />
-                        <Card.Body>
-                            <Card.Title>Mind Reader App</Card.Title>
-                            <Card.Text>
-                                Some quick example text to build on the card title and make up the bulk of
-                                the card's content.
-                            </Card.Text>
-                            <Button variant="primary" href='https://viktorkkendrick.github.io/Mindgame/'>Live Project Site</Button>
-                            <Button variant="muted" href='https://github.com/ViktorKKendrick/Mindgame'>Github Repository</Button>
-                        </Card.Body>
-                    </Card>
-                </Col>
-            </Row>
-
-        </Container>
+        <>
+            <Container className='text-center'>
+                <h3>Projects</h3>
+                <Row className='d-flex text-center align-items-center justify-content-center'>
+                    <ProjectItem description='Tic? Toe? no. Taco' title='TicTacToe Project' liveLink='https://viktorkkendrick.github.io/TicTacToe/' repo='https://github.com/ViktorKKendrick/TicTacToe' image='./Img/TicTacToe.png' />
+                    <ProjectItem description='Enter a valid zip code to see the weather of that area' title='Weather App Project' liveLink='https://viktorkkendrick.github.io/WeatherApp/' repo='https://github.com/ViktorKKendrick/WeatherApp' image='./Img/WeatherApp.png' />
+                    <ProjectItem description="I can read your mind" title='Mind Reader App' liveLink='https://viktorkkendrick.github.io/Mindgame/' repo='https://github.com/ViktorKKendrick/Mindgame' image='./Img/MindReader.png' />
+                </Row>
+                <h1> </h1>
+                <Row className='d-flex text-center align-items-center justify-content-center'>
+                    <ProjectItem description='Control the evil ball and absord the surrounding balls' title='Bouncing Balls Game' liveLink='https://viktorkkendrick.github.io/BouncingBalls/' repo='https://github.com/ViktorKKendrick/BouncingBalls' image='./Img/BouncingBalls.png' />
+                    <ProjectItem description='Generates psudo-random story that can be described as silly' title='Silly Story App' liveLink='https://viktorkkendrick.github.io/SillyStory/' repo='https://github.com/ViktorKKendrick/SillyStory' image='./Img/SillyStory.png' />
+                    <ProjectItem description='Just a restaurant menu used for practice with API calls' title='Menu App' liveLink='https://menu-274fa.firebaseapp.com/' repo='https://github.com/ViktorKKendrick/Menu' image='./Img/Menu.png' />
+                </Row>
+                <h1> </h1>
+                <Row ClassName='d-flex text-center align-items-center justify-content-center'>
+                    <ProjectItem
+                        description='Control the evil ball and absord the surrounding balls'
+                        title='MyLiberry'
+                        liveLink='https://library-9b5f5.web.app/'
+                        repo='https://github.com/ViktorKKendrick/LibraryFinalFrontEnd'
+                        image='./Img/Liberry.png'
+                    />
+                    <ProjectItem
+                        description='Project will be coming Soon!!'
+                        title='Coming Soon'
+                        liveLink=''
+                        repo=''
+                        image='./Img/images.png'
+                    />
+                    <ProjectItem
+                        description='Project will be coming Soon!!'
+                        title='Coming Soon'
+                        liveLink=''
+                        repo=''
+                        image='./Img/images.png'
+                    />
+                </Row>
+            </Container>
+        </>
     )
 }

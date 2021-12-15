@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+.Proj {
+    padding-left: 200px;
+}
+.cMh {
+    height:480px;
+    /* max-height:550px; */
+}
+.imgHeight {
+    min-height:250px;
+    max-height:350px;
+}
